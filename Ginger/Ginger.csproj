@@ -272,9 +272,7 @@
   <ItemGroup>
     <None Include="Resources\Button ON 64x64.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Documents\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Comment_Add_32x32.png" />
   </ItemGroup>
