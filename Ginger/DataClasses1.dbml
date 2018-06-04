@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="G:\l\GDB\CompanyWorkers.mdf" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=G:\l\GDB\CompanyWorkers.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="Ginger.Properties.Settings" SettingsPropertyName="G__l_GDB_CompanyWorkers_mdfConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Appartments" Member="Appartments">
+    <Type Name="Appartments" InheritanceCode="1">
+      <Column Name="DiscKey" Type="System.String" DbType="NVarChar(4000)" CanBeNull="true" IsDiscriminator="true" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Rooms" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="Street" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="NumberAppt" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="District" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="DateCall" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateFree" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Elite" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Type Name="chil" InheritanceCode="2" IsInheritanceDefault="true" />
+    </Type>
+  </Table>
+</Database>

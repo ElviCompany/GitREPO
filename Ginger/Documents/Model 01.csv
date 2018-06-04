@@ -1,0 +1,70 @@
+Свойство;Атрибут
+"public int Id";[Column(IsPrimaryKey = true, IsDbGenerated = true)]
+"public string Rooms";"[Column(DbType = ""NVarChar(25)"", CanBeNull = true)]"
+"public string Street";"[Column(DbType = ""NVarChar(250)"", CanBeNull = true)]"
+"public string NumberAppt";"[Column(DbType = ""NVarChar(5)"", CanBeNull = true)]"
+"public string HouseNumber";"[Column(DbType = ""NVarChar(15)"", CanBeNull = true)]"
+"public string District";"[Column(DbType = ""NVarChar(150)"", CanBeNull = true)]"
+"public string City";"[Column(DbType = ""NVarChar(150)"", CanBeNull = true)]"
+"public string Floor";
+"public string Storeys";
+"public DateTime DateCall";[Column(CanBeNull = true)]
+"public DateTime DateFree";[Column(CanBeNull = true)]
+"public byte Status { get; set;} // TINYINT. 0 - активный, 1 - сдана, 2 - архив";[Column(CanBeNull = true)]
+"public bool Deleted";[Column(CanBeNull = false)]
+"public string Firstname";
+"public string Secondname";
+"public string Surname";
+"public string Phones";
+"public string Source";
+"public string RentTime";
+"public int PriceF";
+"public int Price";
+"public bool Auction";
+"public bool Communal";
+"public bool Light";
+"public bool Water";
+"public bool Pledge";
+"public bool MarriedTrigger";
+"public string MarriedComment";
+"public bool ChildrenTrigger";
+"public string ChildrenComment";
+"public bool AloneTrigger";
+"public string AloneComment";
+"public bool AnimalsTrigger";
+"public string AnimalsComment";
+"public string OwnerType";
+"public bool Farpost";
+"public bool AgentAgreement";
+"public bool SuretyAgreement";
+"public bool Keys";
+"public string Nationality";
+"public bool EmptyTrigger";
+"public string EmptyComment";
+"public bool PartFurnitureTrigger";
+"public string PartFurnitureComment";
+"public bool AreaTrigger";
+"public string AreaComment";
+"public bool BalconyTrigger";
+"public string BalconyComment";
+"public bool LoggiaTrigger";
+"public string LoggiaComment";
+"public bool NewBuildingTrigger";
+"public string NewBuildingComment";
+"public bool ElevatorTrigger";
+"public string ElevatorComment";
+"public bool InternetTrigger";
+"public string InternetComment";
+"public bool RoomsTrigger";
+"public string RoomsComment";
+"public bool LatticesTrigger";
+"public string LatticesComment";
+"public bool PictureToSite";
+"public bool HotOffer";
+"public bool NullComission";
+"public bool Elite";[Column(CanBeNull = true)]
+"public int HotPrice";
+"public int HotComission";
+"public bool HD";
+"public string YoutubeLink";
+"public string CianLink";

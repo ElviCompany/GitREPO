@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D6E933F6-C774-49E7-93B4-F0578CC62E91}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ginger</RootNamespace>
+    <AssemblyName>Ginger</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Ginger_PSD_32x32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algoritms.cs" />
+    <Compile Include="ApptCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApptCard.Designer.cs">
+      <DependentUpon>ApptCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApptCardPhone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApptCardPhone.Designer.cs">
+      <DependentUpon>ApptCardPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DalADO.cs" />
+    <Compile Include="DalEF.cs" />
+    <Compile Include="Dialogs.cs" />
+    <Compile Include="FileDamageAttn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileDamageAttn.Designer.cs">
+      <DependentUpon>FileDamageAttn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstStartAtten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstStartAtten.Designer.cs">
+      <DependentUpon>FirstStartAtten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1FillGrids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1VisPanels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Future.cs" />
+    <Compile Include="Init.cs" />
+    <Compile Include="LogFilePath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogFilePath.Designer.cs">
+      <DependentUpon>LogFilePath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logger.cs" />
+    <Compile Include="Models\ApptIndexator.cs" />
+    <Compile Include="Models\InitModel.cs" />
+    <Compile Include="Models\Model.cs" />
+    <Compile Include="Pictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pictures.Designer.cs">
+      <DependentUpon>Pictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PicturesControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pwd.cs" />
+    <Compile Include="StartCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProgram.cs" />
+    <EmbeddedResource Include="ApptCard.resx">
+      <DependentUpon>ApptCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApptCardPhone.resx">
+      <DependentUpon>ApptCardPhone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileDamageAttn.resx">
+      <DependentUpon>FileDamageAttn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstStartAtten.resx">
+      <DependentUpon>FirstStartAtten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogFilePath.resx">
+      <DependentUpon>LogFilePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pictures.resx">
+      <DependentUpon>Pictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Catalogue_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ginger_PSD_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact_List_02_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calls_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contact_List_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meetings_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reports_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_01_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_01_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Phone_01_32x321.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment_add_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment_History_64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_circle_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue_circle_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button OFF 64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button ON 64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documents\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comment_Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comments_History_32x32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
